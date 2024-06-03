@@ -60,6 +60,7 @@
                 __graph_json_data: {},   //节点的数据
         },
         mounted() {
+
             this.showSeeksGraph();
 
 
@@ -324,8 +325,9 @@
                     ],
                 };
                 //将根节点渲染进图谱中
-                console.log(this.$refs)
-                this.$refs.seeksRelationGraph.setJsonData(this.__graph_json_data);
+                // Vue.set(this.$refs,"seeksRelationGraph",this.__graph_json_data)
+                // this.$refs.seeksRelationGraph.setJsonData(this.__graph_json_data);
+                console.log(this.$refs.seeksRelationGraph)
             },
             // getInfoData() {
             //     axios.get(`http://localhost:5003/node`).then(
