@@ -1,5 +1,6 @@
 <template>
   <div style="height:calc(100vh - 60px);">
+    <button @click="queryData"> 点击刷新数据 </button>
     <RelationGraph ref="graphRef" :options="graphOptions" />
   </div>
 </template>
@@ -55,6 +56,11 @@ export default {
 
   },
   methods: {
+    async queryData(){
+      console.log('刷新数据');
+      await this.getNetData()
+      await this.showGraph()
+    },
     async showGraph() {
       console.log("3 ---  生成树")
       this.$refs.graphRef.setJsonData(this.json_data)
