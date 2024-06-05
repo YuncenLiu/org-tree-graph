@@ -13,6 +13,12 @@
         font-size: 14px;
         font-weight: bold;
     }
+    .relation-graph .c-rg-line-text {
+        font-weight: bold;
+    }
+    .relation-graph .c-btn-open-close span {
+        color: red;
+    }
 </style>
 
 <body>
@@ -51,11 +57,13 @@
                     defaultNodeBorderWidth: 0.5, //节点边框粗细
                     defaultFontFamily: "微软雅黑",
                     defaultLineColor: "rgba(0,0,0,0.47)",    //默认的线条颜色
-                    defaultNodeColor: "rgba(0,0,0,0.06)",    //默认的节点背景颜色
+                    defaultNodeColor: "rgba(0,0,0,0.0)",    //默认的节点背景颜色
                     defaultNodeWidth: "40", //节点宽度 30  90
                     defaultNodeHeight: "150", //节点高度 400 80
                     defaultFocusRootNode: false,   //默认为根节点添加一个被选中的样式
                     moveToCenterWhenResize: false,   //当图谱的大小发生变化时，是否重新让图谱的内容看起来居中
+                    downloadImageFileName: "xiangxiang", // 自定义下载图片名
+                    // allowShowDownloadButton: false, // 显示下载按钮、不显示下载按钮 默认true，显示
                 },
                 __graph_json_data: {},   //节点的数据
         },
