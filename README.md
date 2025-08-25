@@ -1,6 +1,7 @@
-## HTML 及 VueCli 实现股权结构图生成
+# org-tree-graph
 
-依赖于 [relation-graph](https://www.relation-graph.com/) 关系数据展示组件
+HTML 及 VueCli 实现股权结构图生成，依赖于 [relation-graph](https://www.relation-graph.com/) 关系数据展示组件
+
 
 ### HTML 形式实现
 
